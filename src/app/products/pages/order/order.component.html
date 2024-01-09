@@ -1,12 +1,12 @@
 <p-panel header="Custom Pipes" class="p-1">
   <p>
-    Pipes Custom - Creator for {{'us' | toggleCase:false}}
+    Pipes Custom - Creator for {{'us' | toggleCase:isUpperCase}}
   </p>
 </p-panel>
 
 <p-toolbar>
   <div class="p-toolbar-group-start">
-    <p-button label="Toggle Case" icon="pi pi-search"></p-button>
+    <p-button (click)="toggleUpperCase()" label="Toggle Case" icon="pi pi-search"></p-button>
   </div>
 
   <div class="p-toolbar-group-start">
