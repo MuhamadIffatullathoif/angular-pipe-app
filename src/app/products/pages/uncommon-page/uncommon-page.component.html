@@ -6,7 +6,14 @@
 
 <div class="grid">
   <div class="col-12 md:col-6">
-    <p-fieldset legend="i18nSelect Pipe" [toggleable]="true"></p-fieldset>
+    <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
+
+      <p>
+        Greetings {{name}}, it is a pleasure to {{gender | i18nSelect: invitationMap}} you to our event.
+      </p>
+
+      <p-button label="Change Person" (click)="changePerson()"></p-button>
+    </p-fieldset>
   </div>
 
   <div class="col-12 md:col-6">
