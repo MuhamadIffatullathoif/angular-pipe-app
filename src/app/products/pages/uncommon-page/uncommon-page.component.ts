@@ -24,6 +24,12 @@ export class UncommonPageComponent {
     'other': 'we have # clients waiting'
   }
 
+  public person = {
+    name: 'Muhamad Iffat',
+    age: 300,
+    address: 'Central Java'
+  }
+
   changePerson(): void {
     this.name = 'Mellisa';
     this.gender = 'female';
