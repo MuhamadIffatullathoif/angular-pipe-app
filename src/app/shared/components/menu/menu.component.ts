@@ -17,15 +17,18 @@ export class MenuComponent implements OnInit {
         items: [
           {
             label: 'Texts and Dates',
-            icon: 'pi pi-align-left'
+            icon: 'pi pi-align-left',
+            routerLink: '/'
           },
           {
             label: 'Number',
-            icon: 'pi pi-dollar'
+            icon: 'pi pi-dollar',
+            routerLink: 'numbers'
           },
           {
             label: 'Not Common',
-            icon: 'pi pi-globe'
+            icon: 'pi pi-globe',
+            routerLink: 'uncommon'
           },
         ]
       },
